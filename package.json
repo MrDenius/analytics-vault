@@ -1,0 +1,19 @@
+{
+	"name": "analytics-vault",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "node server.js",
+		"push": "git add . && git commit -am \"push\" && git push heroku master"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"express-graphql": "^0.12.0",
+		"graphql": "^15.4.0",
+		"mongodb": "^3.6.3",
+		"mongoose": "^5.11.8"
+	}
+}
