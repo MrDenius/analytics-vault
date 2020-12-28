@@ -5,7 +5,8 @@
 	"main": "app.js",
 	"scripts": {
 		"start": "node server.js",
-		"push": "git add . && git commit -am \"push\" && git push heroku master"
+		"push": "git add . && git commit -am \"push\" && git push heroku master",
+		"logs": ""
 	},
 	"author": "",
 	"license": "ISC",
