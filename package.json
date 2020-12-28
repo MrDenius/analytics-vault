@@ -4,9 +4,9 @@
 	"description": "",
 	"main": "app.js",
 	"scripts": {
-		"start": "node server.js",
+		"start": "node app.js",
 		"push": "git add . && git commit -am \"push\" && git push heroku master",
-		"logs": ""
+		"logs": "heroku logs --app=analytics-vault -t"
 	},
 	"author": "",
 	"license": "ISC",
