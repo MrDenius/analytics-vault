@@ -6,7 +6,9 @@
 	"scripts": {
 		"start": "node app.js",
 		"push": "git add . && git commit -am \"push\" && git push heroku master",
-		"logs": "heroku logs --app=analytics-vault -t"
+		"logs": "heroku logs --app=analytics-vault -t",
+		"on": "heroku ps:scale web=1 --app=analytics-vault",
+		"off": "heroku ps:scale web=0 --app=analytics-vault"
 	},
 	"author": "",
 	"license": "ISC",
@@ -14,7 +16,6 @@
 		"express": "^4.17.1",
 		"express-graphql": "^0.12.0",
 		"graphql": "^15.4.0",
-		"mongodb": "^3.6.3",
 		"mongoose": "^5.11.8"
 	}
 }

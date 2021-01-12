@@ -71,9 +71,9 @@ const RootQuery = new GraphQLObjectType({
 		},
 		user: {
 			type: UserType,
-			args: { id: { type: GraphQLID } },
+			args: { UUID: { type: new GraphQLNonNull(GraphQLString) } },
 			resolve(parent, args) {
-				return User.find({ UUID: args.UUID });
+				return User.findOne({ UUID: args.UUID });
 			},
 		},
 	},
@@ -112,8 +112,8 @@ const Mutation = new GraphQLObjectType({
 					type: args.type,
 					date: args.date,
 					roomsHistory: args.roomsHistory,
-					RoomPath: args.RoomsPath,
-					VERSION: args.version,
+					RoomsPath: args.RoomsPath,
+					VERSION: args.VERSION,
 				});
 				return log.save();
 			},
