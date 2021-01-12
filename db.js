@@ -1,6 +1,6 @@
 const mongo = require("mongoose");
 mongo.connect(
-	"mongodb+srv://av-app:OuN9gBq2qy13c9GQ@cluster0.b9kkv.mongodb.net/analytics-vault?retryWrites=true&w=majority",
+	"mongodb+srv://server:UygfvHycWJwBJvec@cluster0.m3vo2.mongodb.net/<dbname>?retryWrites=true&w=majority",
 	{
 		useNewUrlParser: true,
 		useUnifiedTopology: true,

@@ -5,7 +5,8 @@
 	"main": "app.js",
 	"scripts": {
 		"start": "node app.js",
-		"push": "git add . && git commit -am \"push\" && git push heroku master",
+		"push:heroku": "git add . && git commit -am \"push\" && git push heroku master",
+		"push:glitch": "git add . && git commit -am \"push\" && git push glitch main",
 		"logs": "heroku logs --app=analytics-vault -t",
 		"on": "heroku ps:scale web=1 --app=analytics-vault",
 		"off": "heroku ps:scale web=0 --app=analytics-vault"
